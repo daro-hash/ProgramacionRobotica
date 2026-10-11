@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node pkg="actividad3" exec="emulator" name="Hardware_Emu_Node"/>
+  
+  <node pkg="actividad3" exec="monitor" name="Monitor_Node" args="--ros-args --log-level info">
+    <param name="umbral_temperatura" value="75" type="int"/>
+  </node>
+  
+  <node pkg="actividad3" exec="operator" name="Operator_Node"/>
+</launch>
