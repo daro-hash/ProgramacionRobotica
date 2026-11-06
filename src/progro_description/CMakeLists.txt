@@ -7,7 +7,6 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 
-# Install the dedicated folders to the share directory
 install(DIRECTORY
   launch
   urdf
